@@ -6,11 +6,11 @@ from translate import Translator
 
 def home(request):
 	if request.method == "POST":
-		text = request.POST.get("translate")
-		language = request.POST.get("language")
-		translator= Translator(to_lang=language)
-		translation = translator.translate(text)
-		return render(request,"index.html", {"translation":translation})
+		#text = request.POST.get("translate")
+		#language = request.POST.get("language")
+		#translator= Translator(to_lang=language)
+		#translation = translator.translate(text)
+		#return render(request,"index.html", {"translation":translation})
 	return render(request,"index.html")
 
 
